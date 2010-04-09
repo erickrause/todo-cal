@@ -1,0 +1,18 @@
+<p>
+  <b>Summary:</b>
+  <%= @todo.summary %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @todo.description %>
+</p>
+
+<p>
+  <b>Due:</b>
+  <%= @todo.due %>
+</p>
+
+
+<%= link_to 'Edit', edit_todo_path(@todo) %> |
+<%= link_to 'Back', todos_path %>

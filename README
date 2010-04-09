@@ -1,1 +1,8 @@
 A simple Rails 3 todo app with an ical output.  
+http://icalendar.rubyforge.org/
+http://firstruby.wordpress.com/2007/12/10/ical-icalendar-publishing-through-rubyonrails/
+
+http://loganleger.com/icalendar-webcal-subscription-feed-rails
+http://github.com/rubyredrick/ri_cal
+
+CSS was taken from Ryan Bates railscasts. 

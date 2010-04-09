@@ -1,0 +1,28 @@
+<h1>Listing todos</h1>
+
+<table>
+  <tr>
+    <th>Summary</th>
+    <th>Description</th>
+    <th>Start</th>
+    <th>End</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @todos.each do |todo| %>
+  <tr>
+    <td><%= todo.summary %></td>
+    <td><%= todo.description %></td>
+    <td><%= todo.due %></td>
+    <td><%= link_to 'Show', todo %></td>
+    <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+    <td><%= link_to 'Destroy', todo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'Subscribe with ICal', :action => 'feed', :format => :ics, :only_path => false, :protocol => "webcal" %>
+<%= link_to 'New todo', new_todo_path %>
