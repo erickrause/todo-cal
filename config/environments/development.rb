@@ -16,4 +16,5 @@ TodoCal::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
+  config.time_zone = 'Eastern Time (US & Canada)'
 end

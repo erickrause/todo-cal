@@ -96,8 +96,8 @@ class TodosController < ApplicationController
     cal.custom_property("METHOD","PUBLISH")
     @todos.each do |todo|
        event = Icalendar::Event.new 
-       event.dtstart = todo.due.strftime("%Y%m%dT%H%M%SZ")
-       event.dtend = todo.due.strftime("%Y%m%dT%H%M%SZ")
+       event.dtstart = todo.due.strftime("%Y%m%dT%H%M%S")
+       event.dtend = todo.due.strftime("%Y%m%dT%H%M%S")
        event.summary = todo.summary     
        event.description = todo.description
        event.klass = "PUBLIC"       
